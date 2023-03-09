@@ -8,10 +8,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import java.net.MalformedURLException;
+
 public class BaseTest {
 
     @BeforeMethod
-    public static void setDriver() {
+    public static void setDriver() throws MalformedURLException {
         Driver.initDriver();
     }
 
